@@ -248,7 +248,7 @@ const ProfilePage = () => {
             delete axios.defaults.headers.common['Authorization'];
           }
           console.log('username', user.username);
-          const response = await axios.put(`${baseURL}/users/${user.username}`, {
+          const response = await axios.put(`${baseURL}/users/${user.username}/picture`, {
             profilePicture: imageUrl
           });
           setLoading(false);
